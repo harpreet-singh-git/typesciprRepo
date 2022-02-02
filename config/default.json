@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb://localhost:27017/tsDb",
+    "jwtSecret": "jwtSecretToken",
+    "jwtExpiration": 360000
+  }
