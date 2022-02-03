@@ -5,7 +5,7 @@ import auth from "../../config/auth";
 import jwt from "jsonwebtoken";
 
 export class ProfileController {
-    getAllPro = async (req: any, res: any) => {
+    getAllPro:any = async (req: any, res: any) => {
         res.json({ status: 'Well done!!' });
     }
 
@@ -30,15 +30,15 @@ export class ProfileController {
         }
     }
 
-    getAllProfile = async (req: any, res: any) => {
+    getAllProfile:any = async (req: any, res: any) => {
         let resUser = await Profile.find();
-        console.log("resUjjjser", resUser);
+        // console.log("resU", resUser);
         res.json({ status: 200, "result": resUser });
     }
 
     getProfileById = async (req: any, res: any) => {
         let resUser = await Profile.findOne({_id:req.userId});
-        // console.log("resUser", resUser);
+        // console.log("resUsersssss");
         res.json({ status: 200, "result": resUser });
     }
   

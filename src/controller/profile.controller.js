@@ -12,10 +12,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.UserController = void 0;
+exports.ProfileController = void 0;
 const profile_model_1 = __importDefault(require("../models/profile.model"));
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
-class UserController {
+class ProfileController {
     constructor() {
         this.getAllPro = (req, res) => __awaiter(this, void 0, void 0, function* () {
             res.json({ status: 'Well done!!' });
@@ -42,7 +42,7 @@ class UserController {
         });
         this.getAllProfile = (req, res) => __awaiter(this, void 0, void 0, function* () {
             let resUser = yield profile_model_1.default.find();
-            console.log("resUser", resUser);
+            // console.log("resUjjjser", resUser);
             res.json({ status: 200, "result": resUser });
         });
         this.getProfileById = (req, res) => __awaiter(this, void 0, void 0, function* () {
@@ -52,4 +52,4 @@ class UserController {
         });
     }
 }
-exports.UserController = UserController;
+exports.ProfileController = ProfileController;

@@ -16,6 +16,9 @@ app.use("/api/auth", auth);
 app.use("/api", user);
 // app.use("/api/profile", profile);
 
-app.listen(3000, () => {
-    console.log('The application is listening on port 3000!');
+const port:number = 3000;
+const server = app.listen(port, () => {
+    console.log('The application is listening on port',`${port}`);
 })
+
+// export default server;
