@@ -42,7 +42,7 @@ class UserController {
         });
         this.getAllProfile = (req, res) => __awaiter(this, void 0, void 0, function* () {
             let resUser = yield profile_model_1.default.find();
-            // console.log("resUser", resUser);
+            console.log("resUser", resUser);
             res.json({ status: 200, "result": resUser });
         });
         this.getProfileById = (req, res) => __awaiter(this, void 0, void 0, function* () {

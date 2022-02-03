@@ -1,9 +1,9 @@
 import express from 'express';
 import { Router, Response, Request } from "express";
-import connectDB from "./config/db";
-import user from "./routes/profile.routes";
+import connectDB from "../config/db";
+import user from "../src/routes/profile.routes";
 import bodyParser from "body-parser";
-import auth from "./config/auth";
+import auth from "../config/auth";
 
 const app = express();
 

@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
 const profile_controller_1 = require("../controller/profile.controller");
-const auth_1 = __importDefault(require("../config/auth"));
+const auth_1 = __importDefault(require("../../config/auth"));
 const router = (0, express_1.Router)();
 // @route   GET api/profile/me
 // @desc    Get current user's profile

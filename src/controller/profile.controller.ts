@@ -1,10 +1,10 @@
 import { Router, Response, Request } from "express";
 import * as express from 'express';
 import Profile, { IProfile } from "../models/profile.model";
-import auth from "../config/auth";
+import auth from "../../config/auth";
 import jwt from "jsonwebtoken";
 
-export class UserController {
+export class ProfileController {
     getAllPro = async (req: any, res: any) => {
         res.json({ status: 'Well done!!' });
     }
@@ -32,7 +32,7 @@ export class UserController {
 
     getAllProfile = async (req: any, res: any) => {
         let resUser = await Profile.find();
-        // console.log("resUser", resUser);
+        console.log("resUjjjser", resUser);
         res.json({ status: 200, "result": resUser });
     }
 
