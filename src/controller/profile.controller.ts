@@ -4,6 +4,7 @@ import Profile, { IProfile } from "../models/profile.model";
 import auth from "../../config/auth";
 import jwt from "jsonwebtoken";
 
+
 export class ProfileController {
     getAllPro:any = async (req: any, res: any) => {
         res.json({ status: 'Well done!!' });

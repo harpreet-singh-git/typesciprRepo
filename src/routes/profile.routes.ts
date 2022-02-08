@@ -3,7 +3,7 @@ import { Router, Response, Request } from "express";
 // import { check, validationResult } from "express-validator/check";
 // import HttpStatusCodes from "http-status-codes";
 
-import User, { IUser } from "../models/user.model";
+// import User, { IUser } from "../models/user.model";
 import { ProfileController } from "../controller/profile.controller";
 import auth from "../../config/auth";
 
